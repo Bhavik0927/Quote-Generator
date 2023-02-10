@@ -11,11 +11,12 @@ const tweetNow = () =>{
 }
 
 const getQuotese = async () => {
+    let myKey = config.api_key;
     try {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '453b9c2475msh6f5ca2ec3b72382p17190ajsn1c18ecca1e11',
+                'X-RapidAPI-Key': myKey,
                 'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
             }
         };
