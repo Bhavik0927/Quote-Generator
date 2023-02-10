@@ -11,7 +11,9 @@ const tweetNow = () =>{
 }
 
 const getQuotese = async () => {
+    // add api key in one variable;
     let myKey = config.api_key;
+    
     try {
         const options = {
             method: 'GET',
